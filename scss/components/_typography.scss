@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+
+.card {
+  @media (min-width: $break-l) {
+    float: left;
+    text-align: left;
+  }
+}
+
+.headline--secondary {
+  color: $headline;
+  font-weight: normal;
+}
+
+.headline--primary {
+  margin-left: 25px;
+  width:75%;
+  font-weight: bold;
+  color: $bluegreen;
+}
+
+.blockquote {
+  color: $darkgray;
+  font-style: italic;
+  padding-left: 17px;
+  border-left: 7px solid $bluegreen;
+  border-radius: 5px;
+  font-size: 130%;
+  margin-bottom: 60px;
+}

@@ -1,0 +1,41 @@
+form {
+  @media (min-width: $break-l) {
+    float: right;
+    margin-right: 30px;
+    margin-bottom: -15px;
+  }
+}
+
+.form__label--hidden {
+  display: none;
+}
+
+.form__input {
+  font-weight: bold;
+  color: $darkgray;
+  @include display-center;
+  border: none;
+  border-bottom: 5px solid $bluegreen;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin-left: 17px;
+  width: 88%;
+  &:focus {
+    outline: none;
+  }
+}
+
+input[type="text"] {
+  @media (min-width: $break-l) {
+    width: 110%;
+    margin-left: -20px;
+  }
+}
+
+input[type="password"] {
+  @media (min-width: $break-l) {
+    width: 110%;
+    margin-left: -20px;
+  }
+}

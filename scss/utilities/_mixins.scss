@@ -1,0 +1,20 @@
+@mixin display-center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin box-design{
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  width: 98%;
+}
+
+@mixin common-padding {
+  padding: 10px 0;
+}
+
+@mixin active {
+  outline: none;
+  opacity: 0.75;
+}

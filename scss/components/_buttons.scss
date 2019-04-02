@@ -1,0 +1,84 @@
+.btn--error {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  background-color: $red;
+  @include box-design;
+  height: 35px;
+  margin-bottom: 15px;
+  &:active {
+    @include active;
+  }
+}
+
+.btn--default {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  background-color: $lightblue;
+  @include box-design;
+  height: 35px;
+  margin-bottom: 15px;
+  &:active {
+    @include active;
+  }
+}
+
+.btn--success {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  background-color: $green;
+  @include box-design;
+  height: 35px;
+  margin-bottom: 15px;
+  &:active {
+    @include active;
+  }
+}
+
+.btn--error {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  background-color: $red;
+  @include box-design;
+  height: 35px;
+  margin-bottom: 15px;
+  &:active {
+    @include active;
+  }
+}
+
+.btn--warning {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  background-color: $orange;
+  @include box-design;
+  height: 35px;
+  margin-bottom: 15px;
+  &:active {
+    @include active;
+  }
+}
+
+.btn--info {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  background-color: $purple;
+  @include box-design;
+  height: 35px;
+  margin-bottom: 15px;
+  &:active {
+    @include active;
+  }
+}
+
+button[type="submit"] {
+  @media (min-width: $break-l) {
+    width: 130%;
+    margin-left: -34px;    
+  }
+}
