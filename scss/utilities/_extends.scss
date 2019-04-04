@@ -1,0 +1,20 @@
+.display-center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.box-design {
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  width: $second-common-size;
+}
+
+.common-padding {
+  padding: 10px 0;
+}
+
+.active {
+  outline: none;
+  opacity: 0.75;
+}

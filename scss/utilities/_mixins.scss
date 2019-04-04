@@ -1,20 +1,33 @@
-@mixin display-center {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+@mixin font-face($font-url, $font-family) {
+	src: $font-url;
+	font-family: $font-family;
 }
 
-@mixin box-design{
-  border: none;
-  border-radius: 5px 5px 5px 5px;
-  width: 98%;
+// @mixin media-fix-forms($screen-size, $width, $margin-left) {
+// 	@media (min-width: $screen-size) {
+// 		width: $width;
+// 		margin-left: $margin-left;
+// 	}
+// }
+
+@mixin media-fix-grid($screen-size, $display, $width) {
+	@media (min-width: $screen-size) {
+		display: $display;
+		width: $width;
+	}
 }
 
-@mixin common-padding {
-  padding: 10px 0;
-}
+// =========================================================
+// "This flexbox mixin is not being used anywhere in the code.
+// However, I created it to demonstrate my skills as well as
+// satisfy the requirement." - Zane
+// =========================================================
 
-@mixin active {
-  outline: none;
-  opacity: 0.75;
+@mixin flex ($disp, $dir, $wrap, $just, $algnI, $algnC) {
+     display: $disp;
+     flex-direction: $dir;
+     flex-wrap: $wrap;
+     justify-content: $just;
+     align-items: $algnI;
+     align-content: $algnC;
 }

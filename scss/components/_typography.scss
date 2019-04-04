@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
-
 .card {
   @media (min-width: $break-l) {
     float: left;
@@ -7,16 +5,23 @@
   }
 }
 
+.headline--primary {
+  margin-left: 25px;
+  width: 75%;
+  font-weight: bold;
+  color: $bluegreen;
+}
+
 .headline--secondary {
   color: $headline;
   font-weight: normal;
 }
 
-.headline--primary {
-  margin-left: 25px;
-  width:75%;
+.link {
   font-weight: bold;
-  color: $bluegreen;
+  text-decoration: none;
+  list-style-type: none;
+  color: $lightblue;
 }
 
 .blockquote {
@@ -25,6 +30,6 @@
   padding-left: 17px;
   border-left: 7px solid $bluegreen;
   border-radius: 5px;
-  font-size: 130%;
+  font-size: $third-common-size;
   margin-bottom: 60px;
 }

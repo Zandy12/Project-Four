@@ -1,84 +1,83 @@
 .btn--error {
+  @extend .box-design;
   text-transform: uppercase;
   font-weight: bold;
   color: white;
   background-color: $red;
-  @include box-design;
   height: 35px;
   margin-bottom: 15px;
   &:active {
-    @include active;
+    @extend .active;
   }
 }
 
 .btn--default {
+  @extend .box-design;
   text-transform: uppercase;
   font-weight: bold;
   color: white;
   background-color: $lightblue;
-  @include box-design;
   height: 35px;
   margin-bottom: 15px;
   &:active {
-    @include active;
+    @extend .active;
   }
 }
 
 .btn--success {
+  @extend .box-design;
   text-transform: uppercase;
   font-weight: bold;
   color: white;
   background-color: $green;
-  @include box-design;
   height: 35px;
   margin-bottom: 15px;
   &:active {
-    @include active;
+    @extend .active;
   }
 }
 
 .btn--error {
+  @extend .box-design;
   text-transform: uppercase;
   font-weight: bold;
   color: white;
   background-color: $red;
-  @include box-design;
   height: 35px;
   margin-bottom: 15px;
   &:active {
-    @include active;
+    @extend .active;
   }
 }
 
 .btn--warning {
+  @extend .box-design;
   text-transform: uppercase;
   font-weight: bold;
   color: white;
   background-color: $orange;
-  @include box-design;
   height: 35px;
   margin-bottom: 15px;
   &:active {
-    @include active;
+    @extend .active;
   }
 }
 
 .btn--info {
+  @extend .box-design;
   text-transform: uppercase;
   font-weight: bold;
   color: white;
   background-color: $purple;
-  @include box-design;
   height: 35px;
   margin-bottom: 15px;
   &:active {
-    @include active;
+    @extend .active;
   }
 }
 
 button[type="submit"] {
   @media (min-width: $break-l) {
-    width: 130%;
-    margin-left: -34px;    
+    width: 100% !important;
   }
 }

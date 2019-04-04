@@ -1,5 +1,5 @@
 .img--logo {
-  @include display-center;
+  @extend .display-center;
   padding-bottom: 10px;
   @media (min-width: $break-l) {
     float: left;
@@ -8,8 +8,8 @@
 }
 
 .img--avatar {
-  @include display-center;
-  @include common-padding;
+  @extend .display-center;
+  @extend .common-padding;
   margin-bottom: 10px;
   @media (min-width: $break-l) {
     margin-top: 20px;
@@ -19,7 +19,7 @@
 .img--avatar:nth-child(1) {
   @media (min-width: $break-l) {
     float: right;
-    margin-right: 120px;
+    margin-right: 140px;
     margin-top: 0;
   }
 }

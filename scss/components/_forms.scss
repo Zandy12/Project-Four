@@ -11,9 +11,9 @@ form {
 }
 
 .form__input {
+  @extend .display-center;
   font-weight: bold;
   color: $darkgray;
-  @include display-center;
   border: none;
   border-bottom: 5px solid $bluegreen;
   margin-bottom: 25px;
@@ -23,19 +23,5 @@ form {
   width: 88%;
   &:focus {
     outline: none;
-  }
-}
-
-input[type="text"] {
-  @media (min-width: $break-l) {
-    width: 110%;
-    margin-left: -20px;
-  }
-}
-
-input[type="password"] {
-  @media (min-width: $break-l) {
-    width: 110%;
-    margin-left: -20px;
   }
 }

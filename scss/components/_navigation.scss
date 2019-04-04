@@ -30,8 +30,8 @@ nav {
     }
   }
   a {
-    color: #6b6b6b;
-    font-size: 110%;
+    color: $darkgray;
+    font-size: $common-size;
     text-decoration: none;
     &:hover {
       color: white;

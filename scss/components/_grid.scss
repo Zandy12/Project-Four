@@ -10,10 +10,7 @@
 .theme__colors {
   margin-left: 7px;
   padding-left: 10px;
-  @media (min-width: $break-l) {
-    display: inline-block;
-    width: 15%;
-  }
+  @include media-fix-grid($break-l, inline-block, 15% !important)
 }
 
 .grid__row {
@@ -49,10 +46,7 @@
 }
 
 .grid__col--4 {
-  @media (min-width: $break-l) {
-    display: inline-block;
-    width: 31.85% !important;
-  }
+  @include media-fix-grid($break-l, inline-block, 31.85% !important)
 }
 
 .grid__col--3 {
@@ -75,7 +69,7 @@
 
 .centered {
   @media (min-width: $break-l) {
-    display: flex;
+    //display: flex;
     margin: 0 auto;
   }
 }
@@ -87,55 +81,55 @@
 }
 
 .grid__col--8 {
-  @media (min-width: $break-l) {
-    display: inline-block;
-    width: 64.6875% !important;
-  }
+  @include media-fix-grid($break-l, inline-block, 64.6875% !important)
 }
 
 .grid__col--12.theme__colors {
-  @include common-padding;
-  @include box-design;
+  @extend .common-padding;
+  @extend .box-design;
   background-color: $bluegreen;
+  @media (min-width: $break-l) {
+    width: 98% !important;
+  }
 }
 
 .grid__col--6.theme__colors {
-  @include common-padding;
-  @include box-design;
+  @extend .common-padding;
+  @extend .box-design;
   margin-bottom: 7px;
   background-color: $darkblue;
 }
 
 .grid__col--4.theme__colors {
-  @include common-padding;
-  @include box-design;
+  @extend .common-padding;
+  @extend .box-design;
   margin-bottom: 7px;
   background-color: $lightblue;
 }
 
 .grid__col--3.theme__colors {
-  @include common-padding;
-  @include box-design;
+  @extend .common-padding;
+  @extend .box-design;
   margin-bottom: 7px;
   background-color: $lightpurple;
 }
 
 .grid__col--5.theme__colors {
-  @include common-padding;
-  @include box-design;
+  @extend .common-padding;
+  @extend .box-design;
   margin-bottom: 7px;
   background-color: $lightgreen;
 }
 
 .grid__col--7.theme__colors {
-  @include common-padding;
-  @include box-design;
+  @extend .common-padding;
+  @extend .box-design;
   background-color: $lightred;
 }
 
 .grid__col--8.theme__colors {
-  @include common-padding;
-  @include box-design;
+  @extend .common-padding;
+  @extend .box-design;
   margin-bottom: 7px;
   background-color: $orange;
 }

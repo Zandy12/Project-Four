@@ -1,3 +1,6 @@
+/* Font color variables */
+
+$main-color: #878787;
 $headline: #aaaaaa;
 $red: #ff7070;
 $bluegreen: #4efcc8;
@@ -11,4 +14,18 @@ $lightpurple: #ffb5f8;
 $lightgreen: #7ee588;
 $lightred: #ea9696;
 $orange: #ed9778;
+
+/* Font URL/declaration variables */
+
+$didact-gothic-url: url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+$main-font: 'Didact Gothic', sans-serif;
+
+/* Font size variables */
+
+$common-size: 110%;
+$second-common-size: 98%;
+$third-common-size: 130%;
+
+/* Media query variables */
+
 $break-l: 769px;

@@ -1,25 +1,22 @@
 * {
   /* Insert CSS code here */
-  font-family: 'Didact Gothic', sans-serif;
+  @include font-face($didact-gothic-url, $main-font)
 }
 
 a {
   /* Insert CSS code here */
 }
 
-.link {
-  font-weight: bold;
-  text-decoration: none;
-  list-style-type: none;
-  color: $lightblue;
-}
-
 p {
   /* Insert CSS code here */
-  font-size: 110%;
-  color: #878787;
+  font-size: $common-size;
+  color: $main-color;
 }
 
 ul {
   /* Insert CSS code here */
+}
+
+.container {
+  border: 10px solid white;
 }
